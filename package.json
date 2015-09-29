@@ -8,8 +8,10 @@
   },
   "author": "",
   "license": "ISC",
+  // add preferGlobal and set it to true, which means if someone installs this module through npm and doesn't use the --global option, they will be warned that the module is designed to be installed globally.
   "preferGlobal": true,
-    "bin": {
-      "filesearch": "index.js"
-    }
+  // adding the bin object, which maps commands to files. This means when this module is installed, npm will set up the filesearch executable to execute index.js.
+  "bin": {
+    "filesearch": "index.js"
+  }
 }
